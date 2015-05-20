@@ -1,0 +1,36 @@
+/* Globals.scss */
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:700|Roboto:100,300italic,900);
+
+@mixin body-font-italic {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;   
+}
+
+@mixin body-font-light {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;   
+}
+
+@mixin body-font-bold {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;   
+}
+
+@mixin headline-font {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;   
+}
+
+$background-color: #fff;
+$color: #262626;
+$base-font-size: 22px;
+$line-height: 1.45;
+
+@function em($px, $base: $base-font-size)   {
+    @return ($px / $base) * 1em;
+}
